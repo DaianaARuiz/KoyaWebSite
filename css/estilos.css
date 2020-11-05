@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*----------------------------------------------------CONTENEDOR----------------------------------------------------*/
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+/*----------------------------------------------------MENU----------------------------------------------------*/
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #1D2027;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background: #1D2027;
+    align-items: center;
+}
+.corchete{
+    color: #47D1F9;
+    font-size: 40px;
+
+}
+.menu .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #47D1F9;
+    font-weight: normal;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.nav a:hover{
+    color: #ccc;
+}
+
+/*----------------------------------------------------HOME----------------------------------------------------*/
+
+.home{
+    background: #242831;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.home h3{
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    width: 877px;
+    height: 214px;
+    left: 112px;
+    top: 200px;
+}
+
+.home img{
+    position: absolute;
+    width: 432px;
+    height: 325px;
+    left: 900px;
+    top: 140px;
+}
+/*
+.home_title h3{
+    width: 40%;
+    font-size: 60px;
+    color: #fff;
+    align-items: center;
+}
+
+.home_ilustration img{
+    width: 40%;
+}
+
+*/
+.btn{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 600px;
+    top: 550px;
+    background: #0F57A4;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 15px;
+}
+
+.btn:hover{
+    background-color: #08305a;
+}
+
+.btn-contacto{
+    position: fixed;
+    left: 300px;
+    top: 400px;
+}
+
+.btn-contacto img{
+    width: 100px;
+    height: 100px;
+}
