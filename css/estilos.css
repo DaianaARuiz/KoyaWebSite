@@ -53,7 +53,7 @@
 /*----------------------------------------------------HOME----------------------------------------------------*/
 
 .home{
-    background: #242831;
+    background: url(../img/background05.png);
     width: 100%;
     height: 100vh;
     display: flex;
