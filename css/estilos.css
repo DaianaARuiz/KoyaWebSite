@@ -1,3 +1,15 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+
+
+
+*/
+
+:root{
+    --turquesa:#2AC0FA ;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +28,7 @@
 
 .header{
     width: 100%;
-    height: 50px;
+    height: 70px;
     background-color: #1D2027;
 }
 
@@ -36,6 +48,7 @@
     text-transform: uppercase;
     color: #47D1F9;
     font-weight: normal;
+    padding:12px;
 }
 
 .nav a{
@@ -43,7 +56,8 @@
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
-    margin-left: 5px;
+    margin-left: 15px;
+     font-family: 'Roboto Condensed', sans-serif; 
 }
 
 .nav a:hover{
@@ -73,7 +87,7 @@
     position: absolute;
     width: 432px;
     height: 325px;
-    left: 900px;
+    left: 850px;
     top: 140px;
 }
 /*
@@ -135,3 +149,186 @@
 
 
 /*----------------------------------------------------SERVICIOS----------------------------------------------------*/
+
+.servicios{
+    background: url(../img/servicios00.png);
+    width: 100%;
+    height: 100vh;
+}
+
+.servicios__titulo{
+    font-family: 'Roboto Condensed', sans-serif; 
+    text-align: center;
+    padding: 60px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.servicios__cajas{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.servicios__cajas .servicios__cajas__caja{
+    width: 30%;
+    height: 220px;
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicios__cajas .servicios__cajas__caja img{
+    width: 75%;
+    height: 100%;
+}
+.servicios__cajas .servicios__cajas__caja span{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.servicios__subtitulo{
+    font-family: 'Roboto Condensed', sans-serif; 
+    text-align: center;
+    margin-top: 180px;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.informacion{
+    background: url(../img/background03.png);
+    width: 100%;
+    height: 100vh;
+}
+
+.informacion .informacion__contenido{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    padding-top: 30px;
+    background: #ccc;
+    opacity: .5;
+    border-radius: 30px;
+}
+
+.informacion__contenido h4{
+    text-align: center;
+    font-size: 35px;
+    color: #242831;
+}
+.informacion__contenido p{
+    text-align: center;
+    font-size: 18px;
+}
+.informacion__contenido h4{
+    margin: 10px;
+}
+.informacion__contenido p a{
+    text-decoration:none;
+    color: #fff;
+} 
+.informacion__contenido p a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+/*GRACIAS
+portfolio.svg
+ecommerce.svg
+landingPage.svg 
+*/
+
+
+/*----------------------------------------------------CONTACTO----------------------------------------------------*/
+
+.contact{
+    background: url(../img/background05.png);
+    width: 100%;
+    height: 100vh;
+}
+
+.contact_title{
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.contact_title p:first-child{
+    font-size:40px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact_title p:last-child{
+    font-size:20px;
+    margin-top:20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact_formContainer{
+    margin-left: 45%;
+    display: flex;
+    width:50%;
+    height: 300px;
+}
+
+form label{
+    display:inline;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+form input{
+    display:block;
+    box-sizing: border-box;
+    font: inherit;
+    line-height: normal; 
+    width: 100%;
+    padding:10px 18px;
+    border-bottom: 2px solid var(--turquesa); 
+    background: transparent;
+    border: 0;
+    outline:none;
+}
+
+form input[type=text]{
+    border-bottom: 2px solid var(--turquesa);
+}
+form input[type=email]{
+    border-bottom: 2px solid var(--turquesa);
+}
+
+form textarea{
+    display:block;
+    resize: none;
+    border: none;
+    background: transparent;
+    outline:none; 
+    border-bottom-color: var(--turquesa);
+    padding:30px 40px;
+}
+
+.btn-contac{
+    width:70%;
+	height:40px;
+	padding:5px;
+	background-color: var(--turquesa); 
+	color:white;
+	font: bold 16px 'Roboto Condensed', sans-serif;
+
+	padding:6px;
+    border-radius: 24px;
+}
+
+.btn-contac:hover{
+	background-color:#4EB5A6 ; 
+}
