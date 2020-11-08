@@ -20,7 +20,7 @@
                     <a href="index.html" title="Ir a Inicio">Inicio</a>
                     <a href="servicios.html" title="Ir a Nosotros">Servicios</a>
                     <a href="trabajos.html" title="Ir a Servicios">Trabajos</a>
-                    <a href="preguntasFrecuentes.html" title="Ir a Trabajos">Preguntas frecuentes</a>
+                    <a href="preguntas.html" title="Ir a preguntas">Preguntas frecuentes</a>
                     <a href="contacto.html" title="Ir a Contacto">Contacto</a>
                 </nav>
             </div>
@@ -32,28 +32,36 @@
                 <p>Contactantos</p>
                 <p>Envíanos tu consulta y te responderemos a la brevedad</p>
             </div>
-            <div class="contact_formContainer">
-                <form method="POST" action="">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="client_name" maxlength="20">
+            <div class="contact_content">
+                <div class="contact_socialNetworks">
+                    <td><i class="fab fa-facebook-f"></i></td>
+                    <td><i class="fab fa-instagram"></i></td>
+                    <td><i class="fab fa-whatsapp"></i></td>
+                </div>
+                <div class="contact_formContainer">
+                    <form method="POST" action="">
+                        <label for="name" class="lbl" id="nameLabel">Nombre</label>
+                        <input class="inputs-form"type="text" id="name" name="client_name" maxlength="20">
+    
+                        <label for="subject" class="lbl" id="subjectLabel">Asunto</label>
+                        <input class="inputs-form" type="text" id="subject" name="email_subject" maxlength="20">
+    
+                        <label for="email" class="lbl" id="emailLabel">Email</label>
+                        <input class="inputs-form" type="email" id="email" name="client_email">
+    
+                        <label for="message" class="lbl" id="textareaLabel" >Consulta</label>
+                        <textarea  id="message" name="client_message"></textarea>
 
-                    <label for="subject">Asunto:</label>
-                    <input type="text" id="subject" name="email_subject" maxlength="20">
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="client_email">
-
-                    <label for="message">Consulta</label>
-                    <textarea  id="message" name="client_message"></textarea>
-                    <input type="submit" value="Enviar" class="btn-contac">
-                </form>
+                        <input type="submit" value="Enviar" class="btn-contac">
+                    </form>
+                </div>    
             </div>
-
+           
 
 
         </section>
     </main>
     <script src="https://kit.fontawesome.com/2d78e61024.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="js/contactos1.js"></script>
 </body>
 </html>

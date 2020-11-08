@@ -17,7 +17,7 @@ document.querySelectorAll('.servicios .servicios__cajas img').forEach( (elemento
 //Cerrar bloque de información con el boton
 
 document.querySelector('#btn-cerrar-popup').addEventListener('click', ()=>{
-    infoBloque.classList.remove('activo')
+    infoBloque.classList.remove('activo');
 })
 
 //Cerrar todo el bloque
@@ -29,3 +29,11 @@ infoBloque.addEventListener('click', (evento) =>{
         '';
     }
 });
+ 
+/*
+
+
+*/
+
+
+
