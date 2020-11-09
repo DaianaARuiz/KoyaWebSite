@@ -1,4 +1,4 @@
-//Para name
+//Para Nombre
 const labelNombre = document.getElementById('nameLabel');
 const inputName = document.getElementById('name');
 
@@ -11,7 +11,6 @@ inputName.addEventListener('blur', () =>{
 })
 
 //Para Subject
-
 const labelSubject = document.getElementById('subjectLabel');
 const inputSubjet = document.getElementById('subject');
 
@@ -24,7 +23,6 @@ inputSubjet.addEventListener('blur', () =>{
 })
 
 //Para Mail
-
 const labelMail = document.getElementById('emailLabel');
 const inputMail = document.getElementById('email');
 
@@ -36,8 +34,7 @@ inputMail.addEventListener('blur', () =>{
     labelMail.classList.remove('lblActivo');
 })
 
-//Para el text Area
-
+//Para el textArea
 const textareaLabel = document.getElementById('textareaLabel');
 const inputTextarea = document.getElementById('message');
 

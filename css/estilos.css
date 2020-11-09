@@ -1,7 +1,7 @@
 /*
 font-family: 'Roboto Condensed', sans-serif;
 
-
+<i class="fad fa-window-minimize"></i>
 
 */
 
@@ -67,7 +67,7 @@ font-family: 'Roboto Condensed', sans-serif;
 /*----------------------------------------------------HOME----------------------------------------------------*/
 
 .home{
-    background: url(../img/background05.png);
+    background: url(../img/2.png);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -90,19 +90,40 @@ font-family: 'Roboto Condensed', sans-serif;
     left: 850px;
     top: 140px;
 }
-/*
-.home_title h3{
-    width: 40%;
-    font-size: 60px;
+
+.home-informacion{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/3.png);
+}
+
+.home-informacion__parrafos{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.home-informacion__parrafos h3{
+    font-size: 25px;
     color: #fff;
-    align-items: center;
+    text-transform: uppercase;
+    padding: 20px;
 }
 
-.home_ilustration img{
-    width: 40%;
+.home-informacion__parrafos p{
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
 }
 
-*/
+.home-informacion__parrafos p a{
+    color: #fff;
+}
+.home-informacion__parrafos p a:hover{
+    color: #ccc;
+}
+
+
 .btn{
     position: absolute;
     width: 150px;
@@ -124,27 +145,14 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .btn-contacto{
     position: fixed;
-    left: 300px;
-    top: 370px;
+    left: 360px;
+    top: 350px;
 }
 
 .btn-contacto img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -316,16 +324,71 @@ landingPage.svg
 
 /*--------------------------------------------PREGUNTAS FRECUENTES------------------------------------------*/
 #FrequentQuestions{
-    background: url(../img/background05.png);
+    background: url(../img/background03.png);
     width: 100%;
     height: 100vh;
+    color:white;
+    font-family: 'PT Sans', sans-serif;
 }
 
+#FrequentQuestions i{
+    cursor: pointer;
+}
+.FrequentQuestions_title{
+   padding-top:30px;
+   text-align: center;
+   padding-bottom:30px;
+}
 
+.FrequentQuestions_title p:first-child{
+    font-size: 50px;
+}
 
+.fa-plus{
+    font-size: 25px;
+    padding-left: 10px;
+}
 
+.Onequestion{
+    font-size: 25px;
+    width: 90%;
+    /* line-height: 20px; */
+}
+.cardInstructions{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    transition: 5s;
+}
 
+.cardInstructions .cardsInstructions_card1,
+.cardInstructions .cardsInstructions_card2,
+.cardInstructions .cardsInstructions_card3,
+.cardInstructions .cardsInstructions_card4{
+    width: 30%;
+    height: 100%;
+    border: solid 1px var(--turquesa);
+    border-radius:10%;
+    padding-left: 10px;
+    margin-right:7px;
+}
 
+.cardsInstructions_card__p{
+    
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.cardsInstructions_card__description{
+    text-align: center;
+    font-size: 15px;
+}
+
+.hidden-description{
+    display: none;
+}
 
 /*----------------------------------------------------CONTACTO----------------------------------------------------*/
 
@@ -447,9 +510,7 @@ form textarea{
  	height: 60px;
  	font-size: 40px;
  	line-height: 1.6;
-
  	margin-bottom:30px;
-
 	text-align: center;
 	color:white;
 	background-color: #4EB5A6;
@@ -457,12 +518,65 @@ form textarea{
 	border-radius: 50%;
 	-webkit-box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
  	box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
-
 }
 
 td i:hover{
     background-color: var(--turquesa);
 }
+/*----------------------------------------------------TRABAJOS  ----------------------------------------------------*/
+
+.trabajos{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background00.png);
+}
+
+.trabajos__titulo{
+    font-family: 'Roboto Condensed', sans-serif; 
+    text-align: center;
+    padding: 60px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*----------------------------------------------------FOOTER----------------------------------------------------*/
