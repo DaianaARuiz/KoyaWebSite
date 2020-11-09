@@ -325,6 +325,7 @@ landingPage.svg
 /*--------------------------------------------PREGUNTAS FRECUENTES------------------------------------------*/
 #FrequentQuestions{
     background: url(../img/background03.png);
+    background-repeat: repeat;
     width: 100%;
     height: 100vh;
     color:white;
@@ -352,10 +353,13 @@ landingPage.svg
 .Onequestion{
     font-size: 25px;
     width: 90%;
-    /* line-height: 20px; */
+    padding-bottom:20px;
 }
+
+
 .cardInstructions{
     display: flex;
+    padding-top:25px;
     width: 100%;
     height: 350px;
     transition: 5s;
@@ -374,7 +378,6 @@ landingPage.svg
 }
 
 .cardsInstructions_card__p{
-    
     text-align: center;
     padding: 5px;
     font-size: 20px;
@@ -388,8 +391,18 @@ landingPage.svg
 
 .hidden-description{
     display: none;
+    transition: 5s;
 }
 
+.orderQuestions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.response{
+    padding: 20px 10px;
+}
 /*----------------------------------------------------CONTACTO----------------------------------------------------*/
 
 .contact{
