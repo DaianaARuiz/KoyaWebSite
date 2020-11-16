@@ -325,10 +325,20 @@ landingPage.svg
 }
 
 /*--------------------------------------------PREGUNTAS FRECUENTES------------------------------------------*/
-#FrequentQuestions{
+.FrequentQuestions{
     background: url(../img/background03.png);
+    background-attachment: fixed;
     width: 100%;
     height: 100vh;
+    color:white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.FrequentQuestionsHidden{
+    background: url(../img/background03.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 150vh;
     color:white;
     font-family: 'PT Sans', sans-serif;
 }
