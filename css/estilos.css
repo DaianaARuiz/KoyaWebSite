@@ -338,7 +338,7 @@ landingPage.svg
     background: url(../img/background03.png);
     background-attachment: fixed;
     width: 100%;
-    height: 150vh;
+    height: 200vh;
     color:white;
     font-family: 'PT Sans', sans-serif;
 }
@@ -508,17 +508,20 @@ form textarea{
     width:100%;
 	height:40px;
 	padding:5px;
-	background-color: var(--turquesa); 
-	color:white;
-	font: bold 16px 'Roboto Condensed', sans-serif;
-
+    color:white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+	font: bold 16px consolas, sans-serif;
 	padding:6px;
-    border-radius: 24px;
+    /* border-radius: 24px; */
     margin-top:40px;
-}
+/* } */
 
 .btn-contac:hover{
-	background-color:#4EB5A6 ; 
+	color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    cursor: pointer;
 }
 
 

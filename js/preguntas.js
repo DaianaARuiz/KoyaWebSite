@@ -18,7 +18,7 @@ clickUno.addEventListener('click', ()=>{
     /*if(seccionTrabajo.style.height = '100vh'){
     seccionTrabajo.style.height = '150vh';
     }else if(seccionTrabajo.style.height = '150vh'){
-        seccionTrabajo.style.height = '100vh'
+        seccionTrabajo.style.height = '100vh';
     }*/
 });
 
