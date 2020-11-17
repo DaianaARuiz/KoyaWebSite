@@ -7,14 +7,14 @@ const seccionTrabajo = document.getElementById('FrequentQuestions');
 const botonUno = document.getElementById('btn-FrequentQuestions_1');
 const respuestaUno = document.getElementById('response1');
 const clickUno = document.getElementById('play-boton_1');
+//const clicks = document.querySelectorAll('.play-boton');
 
 clickUno.addEventListener('click', ()=>{
     respuestaUno.classList.toggle('hidden-description');
     botonUno.classList.toggle('fa-plus');
     botonUno.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestions');
     seccionTrabajo.classList.toggle('FrequentQuestionsHidden');
-
+    
     /*if(seccionTrabajo.style.height = '100vh'){
     seccionTrabajo.style.height = '150vh';
     }else if(seccionTrabajo.style.height = '150vh'){
@@ -32,7 +32,6 @@ clickDos.addEventListener('click', ()=>{
     respuestaDos.classList.toggle('hidden-description');
     botonDos.classList.toggle('fa-plus');
     botonDos.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestions');
     seccionTrabajo.classList.toggle('FrequentQuestionsHidden');
 });
 
@@ -46,7 +45,6 @@ clickTres.addEventListener('click', ()=>{
     respuestaTres.classList.toggle('hidden-description');
     botonTres.classList.toggle('fa-plus');
     botonTres.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestions');
     seccionTrabajo.classList.toggle('FrequentQuestionsHidden');
 });
 
@@ -60,7 +58,6 @@ clickCuatro.addEventListener('click', ()=>{
     respuestaCuatro.classList.toggle('hidden-description');
     botonCuatro.classList.toggle('fa-plus');
     botonCuatro.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestions');
     seccionTrabajo.classList.toggle('FrequentQuestionsHidden');
 });
 
@@ -74,6 +71,5 @@ clickCinco.addEventListener('click', ()=>{
     respuestaCinco.classList.toggle('hidden-description');
     botonCinco.classList.toggle('fa-plus');
     botonCinco.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestions');
-    seccionTrabajo.classList.toggle('FrequentQuestionsHidden');
+    seccionTrabajo.classList.toggle('FrequentQuestionsHidden');;
 });

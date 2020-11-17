@@ -94,8 +94,9 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .home-informacion{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: url(../img/3.png);
+    background-attachment: fixed;
 }
 
 .home-informacion__parrafos{
@@ -388,6 +389,23 @@ landingPage.svg
     margin-right:7px;
 }
 
+.cardInstructions .cardsInstructions_card1 .cardsInstructions_card__description img{
+    width: 100%;
+    height: 100%;
+}
+.cardInstructions .cardsInstructions_card2 .cardsInstructions_card__description img{
+    width: 50%;
+    height: 100%;
+}
+.cardInstructions .cardsInstructions_card3 .cardsInstructions_card__description img{
+    width: 95%;
+    height: 80%;
+}
+.cardInstructions .cardsInstructions_card4 .cardsInstructions_card__description img{
+    width: 70%;
+    height: 100%;
+}
+
 .cardsInstructions_card__p{
     text-align: center;
     padding: 5px;
@@ -600,41 +618,6 @@ td i:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------------------------------------------------FOOTER----------------------------------------------------*/
 
 footer{
@@ -667,3 +650,7 @@ footer div{
     color:var(--fucsia);
     font-size: 34px;
 }
+
+/*----------------------------------------------------MEDIA----------------------------------------------------*/
+
+@media (max-width:768px){}
