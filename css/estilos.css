@@ -330,7 +330,7 @@ landingPage.svg
     background: url(../img/background03.png);
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     color:white;
     font-family: 'PT Sans', sans-serif;
 }
@@ -688,6 +688,26 @@ footer div{
     .btn-contacto{
         display: none;
     }
+    /*------------------------------------------------TRABAJOS----------------------------------------------------*/
 
+    .trabajos__carousel{
+        height: 200px;
+    }
+
+    /*----------------------------------------PREGUNTAS FRECUENTES----------------------------------------------------*/
+
+    .cardInstructions{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        transition: 5s;
+    }
+
+    .cardInstructions .cardsInstructions_card1,
+    .cardInstructions .cardsInstructions_card2,
+    .cardInstructions .cardsInstructions_card3,
+    .cardInstructions .cardsInstructions_card4{
+        width: 45%;
+    }
     
 }
