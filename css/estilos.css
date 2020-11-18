@@ -720,4 +720,16 @@ footer div{
     .cardInstructions .cardsInstructions_card4 .cardsInstructions_card__description img{
         width: 65%;
     }
+    /*----------------------------------CONTACTO----------------------------------------------------*/
+
+    .contact{
+        background-position: center;
+    }
+}
+
+/*----------------------------------MEDIA CELULARES----------------------------------------------------*/
+
+@media (max-width:360px){
+/*----------------------------------------MENU---------------------------------------------------------------*/
+
 }
