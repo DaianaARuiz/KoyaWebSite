@@ -651,6 +651,43 @@ footer div{
     font-size: 34px;
 }
 
-/*----------------------------------------------------MEDIA----------------------------------------------------*/
+/*----------------------------------------------------MEDIATABLES----------------------------------------------------*/
 
-@media (max-width:768px){}
+@media (max-width:768px){
+    /*----------------------------------------------------MENU----------------------------------------------------*/
+    .logo{
+        display: none;
+    }
+    .menu{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-top: 20px;
+    }
+    /*----------------------------------------------------INICIO----------------------------------------------------*/
+
+    .home{
+        background-position: center;
+        width: 100%;
+    }
+
+    .home h3{
+        font-size: 40px;
+        width: 75px;
+        height: 200px;
+        left: 80px;
+    }
+    .home img{
+        height: 200px;
+        left: 420px;
+    }
+    .btn{
+        left: 300px;
+    }
+
+    .btn-contacto{
+        display: none;
+    }
+
+    
+}
