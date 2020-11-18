@@ -335,14 +335,6 @@ landingPage.svg
     font-family: 'PT Sans', sans-serif;
 }
 
-.FrequentQuestionsHidden{
-    background: url(../img/background03.png);
-    background-attachment: fixed;
-    width: 100%;
-    height: 200vh;
-    color:white;
-    font-family: 'PT Sans', sans-serif;
-}
 
 #FrequentQuestions i{
     cursor: pointer;
@@ -420,7 +412,6 @@ landingPage.svg
 
 .hidden-description{
     display: none;
-    transition: 5s;
 }
 
 .orderQuestions{
@@ -700,6 +691,7 @@ footer div{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 500px;
         transition: 5s;
     }
 
@@ -708,6 +700,24 @@ footer div{
     .cardInstructions .cardsInstructions_card3,
     .cardInstructions .cardsInstructions_card4{
         width: 45%;
+        height: 50%;
     }
-    
+    .hidden-description{
+        display: none;
+    }
+    .cardsInstructions_card__description{
+        font-size: 13px;
+    }
+    .cardInstructions .cardsInstructions_card1 .cardsInstructions_card__description img{
+        width: 70%;
+    }
+    .cardInstructions .cardsInstructions_card2 .cardsInstructions_card__description img{
+        width: 40%;
+    }
+    .cardInstructions .cardsInstructions_card3 .cardsInstructions_card__description img{
+        width: 65%;
+    }
+    .cardInstructions .cardsInstructions_card4 .cardsInstructions_card__description img{
+        width: 65%;
+    }
 }
