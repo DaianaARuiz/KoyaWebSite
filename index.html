@@ -1,85 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Koya Web</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header" class="header">
-        <div class="contenedor">
-            <div class="menu">
-                <h2 class="logo"><span class="corchete"><</span>Koya Web<span class="corchete">></span></h2>
-                <nav class="nav">
-                    <a href="index.html" title="Ir a Inicio">Inicio</a>
-                    <a href="servicios.html" title="Ir a Servicios">Servicios</a>
-                    <a href="trabajos.html" title="Ir a Trabajos">Trabajos</a>
-                    <a href="preguntas.html" title="Ir a Preguntas">Preguntas frecuentes</a>
-                    <a href="contacto.html" title="Ir a Contacto">Contacto</a>
-                </nav>
-            </div>
+      <div class="contenedor">
+        <div class="menu">
+          <h2 class="logo">
+            <span class="corchete"><</span>Koya Web<span class="corchete"
+              >></span
+            >
+          </h2>
+          <nav class="nav show">
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+              </label>
+            <a href="index.html" title="Ir a Inicio">Inicio</a>
+            <a href="servicios.html" title="Ir a Servicios">Servicios</a>
+            <a href="trabajos.html" title="Ir a Trabajos">Trabajos</a>
+            <a href="preguntas.html" title="Ir a Preguntas"
+              >Preguntas frecuentes</a
+            >
+            <a href="contacto.html" title="Ir a Contacto">Contacto</a>
+            
+          </nav>
         </div>
+      </div>
     </header>
     <main>
-        <section class="home" id="home">
-            <div class="contenedor">
-                <div class="home_title">
-                    <h3>HACIENDO REAL<br>
-                        LA TRANSFORMACIÓN 
-                        DIGITAL</h3>
-                </div>
-                <div class="home_ilustration">
-                    <img src="img/minitaEnElCelu.svg" alt="">
-                </div>
-
-                    <a href="" class="btn">Conoce más</a>
-
-                    <a href="contacto.html" class="btn-contacto" title="Ir a Contacto"><img src="img/email.svg" alt=""></a> 
-                </div>
-        </section>
-        <section class="home-informacion" id="home-informacion">
-            <div class="contenedor">
-                <div class="home-informacion__parrafos">
-                    <h3>Nosotros</h3>
-                    <p>
-                        Koya Web es un emprendimiento argentino que surge en base a la pasión a la tecnologia y 
-                        al desarrollo de la web. Amamos lo que hacemos y te invitamos a conocernos.
-                    </p>
-                    <p>
-                        Buscamos que nuestros clientes queden satisfechos con el resultado de nuestros trabajos, y 
-                        para ello nos esforzamos para brindar el mejor de los trabajos posibles.
-                    </p>
-                    <hr>
-                    <h3>¿Que hacemos?</h3>
-                    <p>
-                        Nuestro principal servicio es el diseño y desarrollo de sitios, paginas y aplicaciones webs 
-                        totalmente personalizados a gusto del cliente. Tambien, te ofrecemos nuestro mantenimiento a partir de nuestros proyectos. <a href="servicios.html">¿Queres saber más?</a>
-                    </p>
-                    <hr>
-                    <h3>¿Por qué lo hacemos?</h3>
-                    <p>
-                        Por que pensamos que todo el mundo debe tener su lugar en la web. Todo el mundo que tenga su propio negocio debe estar digitalizado y al alcance de cualquiera. Nuestro principal objetivo es que potencies tu empresa con la ayuda de la web, y también, de nosotros.
-                    </p>
-                    <br>
-                </div>
+      <section class="home" id="home">
+        <div class="contenedor">
+          <div class="home__contenido">
+            <div class="home_title">
+              <h3>
+                HACIENDO REAL<br />
+                LA TRANSFORMACIÓN DIGITAL
+              </h3>
             </div>
-        </section>
+            <div class="home_ilustration">
+              <img src="img/minitaEnElCelu.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="home__btn">
+            <a href="" class="btn">Conoce más</a>
+          </div>
+          
+          <a href="contacto.html" class="btn-contacto" title="Ir a Contacto">
+              <img src="img/email.svg" alt=""/>
+            </a>
+        </div>
+      </section>
+      <section class="home-informacion" id="home-informacion">
+        <div class="contenedor">
+          <div class="home-informacion__parrafos">
+            <h3>Nosotros</h3>
+            <p>
+              Koya Web es un emprendimiento argentino que surge en base a la
+              pasión a la tecnologia y al desarrollo de la web. Amamos lo que
+              hacemos y te invitamos a conocernos.
+            </p>
+            <p>
+              Buscamos que nuestros clientes queden satisfechos con el resultado
+              de nuestros trabajos, y para ello nos esforzamos para brindar el
+              mejor de los trabajos posibles.
+            </p>
+            <hr />
+            <h3>¿Que hacemos?</h3>
+            <p>
+              Nuestro principal servicio es el diseño y desarrollo de sitios,
+              paginas y aplicaciones webs totalmente personalizados a gusto del
+              cliente. Tambien, te ofrecemos nuestro mantenimiento a partir de
+              nuestros proyectos.
+              <a href="servicios.html">¿Queres saber más?</a>
+            </p>
+            <hr />
+            <h3>¿Por qué lo hacemos?</h3>
+            <p>
+              Por que pensamos que todo el mundo debe tener su lugar en la web.
+              Todo el mundo que tenga su propio negocio debe estar digitalizado
+              y al alcance de cualquiera. Nuestro principal objetivo es que
+              potencies tu empresa con la ayuda de la web, y también, de
+              nosotros.
+            </p>
+            <br />
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer__vacio"></div>
-        <p class="">Koya Web 2020 | Todos los derechos reservados</p>
-        <div class="footer__redes">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-whatsapp"></i>
-        </div>       
+      <div class="footer__vacio"></div>
+      <p class="">Koya Web 2020 | Todos los derechos reservados</p>
+      <div class="footer__redes">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
+      </div>
     </footer>
-    <script src="https://kit.fontawesome.com/2d78e61024.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2d78e61024.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
