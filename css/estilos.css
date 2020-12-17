@@ -98,25 +98,7 @@ font-family: 'Roboto Condensed', sans-serif;
     width: 62%;
     margin-left: 20px;
 }
-/*
-.home h3{
-    font-size: 60px;
-    color: #fff;
-    position: absolute;
-    width: 877px;
-    height: 214px;
-    left: 112px;
-    top: 200px;
-}
 
-.home img{
-    position: absolute;
-    width: 432px;
-    height: 325px;
-    left: 850px;
-    top: 140px;
-}
-*/
 .home-informacion{
     width: 100%;
     height: 100%;
@@ -406,7 +388,7 @@ landingPage.svg
     margin-right:7px;
 }
 
-.cardInstructions .cardsInstructions_card1 .cardsInstructions_card__description img{
+/* .cardInstructions .cardsInstructions_card1 .cardsInstructions_card__description img{
     width: 100%;
     height: 100%;
 }
@@ -421,7 +403,7 @@ landingPage.svg
 .cardInstructions .cardsInstructions_card4 .cardsInstructions_card__description img{
     width: 70%;
     height: 100%;
-}
+} */
 
 .cardsInstructions_card__p{
     text-align: center;
@@ -729,7 +711,7 @@ footer div{
     .cardsInstructions_card__description{
         font-size: 13px;
     }
-    .cardInstructions .cardsInstructions_card1 .cardsInstructions_card__description img{
+    /* .cardInstructions .cardsInstructions_card1 .cardsInstructions_card__description img{
         width: 70%;
     }
     .cardInstructions .cardsInstructions_card2 .cardsInstructions_card__description img{
@@ -740,7 +722,7 @@ footer div{
     }
     .cardInstructions .cardsInstructions_card4 .cardsInstructions_card__description img{
         width: 65%;
-    }
+    } */
     /*----------------------------------CONTACTO----------------------------------------------------*/
 
     .contact{
