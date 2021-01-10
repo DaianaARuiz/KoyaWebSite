@@ -1,39 +1,26 @@
-// Bloque de información
+const icon = document.getElementById('icon');
+const nav = document.querySelector('.nav');
 
-const infoBloque = document.getElementById('infoBloque');
-document.querySelectorAll('.servicios .servicios__cajas img').forEach( (elemento) => {
-    
-    
-    elemento.addEventListener('click', ()=> {
-        const ruta = elemento.getAttribute('src');
-        const descripcion = elemento.parentNode.dataset.descripcion;
-
-        infoBloque.classList.add('activo');
-        document.querySelector('#infoBloque img').src = ruta;
-        document.querySelector('#infoBloque .info_bloque__descripcion').innerHTML = descripcion;
-    });
+icon.addEventListener('click', ()=>{
+    nav.classList.toggle('show');
 });
 
-//Cerrar bloque de información con el boton
+window.addEventListener('scroll', reveal);
 
-document.querySelector('#btn-cerrar-popup').addEventListener('click', ()=>{
-    infoBloque.classList.remove('activo');
-})
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    for(var i = 0; i < reveals.length; i++)
+   {
+        var windowheight = window.innerHeight; //altura (en pixeles) del viewport
+        var revealtop = reveals[i].getBoundingClientRect().top; //devuelve el tamaño de un elemento y su posición relativa respecto al viewport
+        var revealpoint = 150;
 
-//Cerrar todo el bloque
-
-infoBloque.addEventListener('click', (evento) =>{
-    if(evento.target.id === 'infoBloque'){
-        infoBloque.classList.remove('activo')
-    }else{
-        '';
-    }
-});
- 
-/*
-
-
-*/
-
-
-
+        if(revealtop < windowheight - revealpoint)
+        {
+            reveals[i].classList.add('active');
+        }else
+        {
+            reveals[i].classList.remove('active');
+        }   
+  }
+}

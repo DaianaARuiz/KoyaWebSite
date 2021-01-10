@@ -6,8 +6,12 @@ inputName.addEventListener('click', () =>{
     labelNombre.classList.add('lblActivo');
 })
 
-inputName.addEventListener('blur', () =>{
-    labelNombre.classList.remove('lblActivo');
+inputName.addEventListener('blur', (evento) =>{
+    if(evento.target.value.trim() !== ''){
+        labelNombre.classList.add('lblActivo');
+    }else{
+        labelNombre.classList.remove('lblActivo');
+    }
 })
 
 //Para Subject
@@ -18,8 +22,12 @@ inputSubjet.addEventListener('click', () =>{
     labelSubject.classList.add('lblActivo');
 })
 
-inputSubjet.addEventListener('blur', () =>{
-    labelSubject.classList.remove('lblActivo');
+inputSubjet.addEventListener('blur', (evento) =>{
+    if(evento.target.value.trim() !== ''){
+        labelSubject.classList.add('lblActivo');
+    }else{
+        labelSubject.classList.remove('lblActivo');
+    }
 })
 
 //Para Mail
@@ -30,8 +38,12 @@ inputMail.addEventListener('click', () =>{
     labelMail.classList.add('lblActivo');
 })
 
-inputMail.addEventListener('blur', () =>{
-    labelMail.classList.remove('lblActivo');
+inputMail.addEventListener('blur', (evento) =>{
+    if(evento.target.value.trim() !== ''){
+        labelMail.classList.add('lblActivo');
+    }else{
+        labelMail.classList.remove('lblActivo');
+    }
 })
 
 //Para el textArea
@@ -42,7 +54,20 @@ inputTextarea.addEventListener('click', () =>{
     textareaLabel.classList.add('lblActivo');
 })
 
-inputTextarea.addEventListener('blur', () =>{
-    textareaLabel.classList.remove('lblActivo');
+inputTextarea.addEventListener('blur', (evento) =>{
+    if(evento.target.value.trim() !== ''){
+        textareaLabel.classList.add('lblActivo');
+    }else{
+        textareaLabel.classList.remove('lblActivo');
+    }
 })
+
+//Responsive
+
+const icon = document.getElementById('icon');
+const nav = document.querySelector('.nav');
+
+icon.addEventListener('click', ()=>{
+    nav.classList.toggle('show');
+});
 

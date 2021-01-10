@@ -1,75 +1,20 @@
-//------------------------------------------------ID Seccion-------------------------------------------------
-
-const seccionTrabajo = document.getElementById('FrequentQuestions');
-
-//------------------------------------------------RESPUESTA 1-------------------------------------------------
-
-const botonUno = document.getElementById('btn-FrequentQuestions_1');
-const respuestaUno = document.getElementById('response1');
-const clickUno = document.getElementById('play-boton_1');
-//const clicks = document.querySelectorAll('.play-boton');
-
-clickUno.addEventListener('click', ()=>{
-    respuestaUno.classList.toggle('hidden-description');
-    botonUno.classList.toggle('fa-plus');
-    botonUno.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestionsHidden');
-    
-    /*if(seccionTrabajo.style.height = '100vh'){
-    seccionTrabajo.style.height = '150vh';
-    }else if(seccionTrabajo.style.height = '150vh'){
-        seccionTrabajo.style.height = '100vh';
-    }*/
+//------------------------------------------------MOSTRAR RESPUESTA--------------------------------------------
+document.addEventListener("click",(e)=>{
+    if(e.target.matches(".fa-plus") || e.target.matches(".fa-minus"))
+    {
+        let $contenedorPregunta= e.target.parentNode;
+            $contenedorPadre=$contenedorPregunta.parentNode;
+            $respuesta= $contenedorPadre.lastElementChild;
+            
+        $respuesta.classList.toggle('hidden-description');
+        e.target.classList.toggle('fa-plus');
+        e.target.classList.toggle('fa-minus');
+    }
 });
+//------------------------------------------------MENU RESPONSIVE-------------------------------------------------
+const $icon = document.getElementById('icon');
+const $nav = document.querySelector('.nav');
 
-//------------------------------------------------RESPUESTA -------------------------------------------------
-
-const botonDos = document.getElementById('btn-FrequentQuestions_2');
-const respuestaDos = document.getElementById('response2');
-const clickDos = document.getElementById('play-boton_2');
-
-clickDos.addEventListener('click', ()=>{
-    respuestaDos.classList.toggle('hidden-description');
-    botonDos.classList.toggle('fa-plus');
-    botonDos.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestionsHidden');
-});
-
-//------------------------------------------------RESPUESTA 3-------------------------------------------------
-
-const botonTres = document.getElementById('btn-FrequentQuestions_3');
-const respuestaTres = document.getElementById('response3');
-const clickTres = document.getElementById('play-boton_3');
-
-clickTres.addEventListener('click', ()=>{
-    respuestaTres.classList.toggle('hidden-description');
-    botonTres.classList.toggle('fa-plus');
-    botonTres.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestionsHidden');
-});
-
-//------------------------------------------------RESPUESTA 4-------------------------------------------------
-
-const botonCuatro = document.getElementById('btn-FrequentQuestions_4');
-const respuestaCuatro = document.getElementById('response4')
-const clickCuatro = document.getElementById('play-boton_4');
-
-clickCuatro.addEventListener('click', ()=>{
-    respuestaCuatro.classList.toggle('hidden-description');
-    botonCuatro.classList.toggle('fa-plus');
-    botonCuatro.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestionsHidden');
-});
-
-//------------------------------------------------RESPUESTA 5-------------------------------------------------
-
-const botonCinco = document.getElementById('btn-FrequentQuestions_5');
-const respuestaCinco = document.getElementById('response5');
-const clickCinco = document.getElementById('play-boton_5');
-
-clickCinco.addEventListener('click', ()=>{
-    respuestaCinco.classList.toggle('hidden-description');
-    botonCinco.classList.toggle('fa-plus');
-    botonCinco.classList.toggle('fa-minus');
-    seccionTrabajo.classList.toggle('FrequentQuestionsHidden');;
+$icon.addEventListener('click', ()=>{
+    $nav.classList.toggle('show');
 });
